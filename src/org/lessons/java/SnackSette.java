@@ -12,10 +12,10 @@ public class SnackSette {
 		
 		sc.close();
 		
-		/// da completare
-		int hours = 0;
-		int minutes = 0;
-		int seconds = 0;
+		
+		int hours = userSeconds / 3600;
+		int minutes = (userSeconds % 3600) / 60;
+		int seconds = userSeconds % 60;
 		
 		System.out.println(userSeconds + " secondi convertiti diventano -> " + String.format("%02d:%02d:%02d", hours, minutes, seconds) + " -> " + hours + " ore " + minutes + " minuti " + seconds + " secondi");
 		
